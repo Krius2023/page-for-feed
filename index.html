@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT based Food Feeding for Pet Animals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>IoT based Food Feeding for Pet Animals</h1>
+        <p>This project allows you to feed your lovely pets remotely using IoT technology.</p>
+        <h2>Tools Used:</h2>
+        <ul>
+            <li>Raspberry Pi Pico W</li>
+            <li>Servo SG90</li>
+        </ul>
+        <h2>Setup for Food Feeding:</h2>
+        <p>Just Connect a power suppply with a USB cable.</p>
+        <h2>Instructions:</h2>
+        <ol>
+            <li>Power up the Raspberry Pi Pico W.</li>
+            <li>Connect to the Wi-Fi network named: <strong>NAME</strong>.</li>
+            <li>Open the following IP address in your web browser: <strong>192.168.4.1</strong>.</li>
+            <li>Tap the "Feed" button to feed your pets.</li>
+        </ol>
+            <button onclick="window.location.href='http://192.168.4.1/feed'">Feed</button>
+
+</div>
+</body>
+</html>
