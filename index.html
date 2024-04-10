@@ -8,20 +8,11 @@
     <style>
         body,
         html {
-            height: 100vh;
-            width: 100vw;
-        }
-
-        * {
+            height: 100%;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
             background-image: url('./bg.jpg');
             background-size: cover;
             background-position: center;
@@ -30,40 +21,36 @@
 
         .container {
             display: flex;
-            justify-content: center;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             background-image: url('./container-bg.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-
-            margin: 50px auto;
+            margin: 20px;
             padding: 20px;
             border-radius: 10px;
+            width: 80%;
             max-width: 800px;
-            width: 60%;
-            height: 90vh;
-            opacity: 90%;
+            opacity: 0.9;
         }
 
         h3,
         h4 {
-            color: white;
             text-align: center;
+            margin-bottom: 10px;
         }
 
         section {
-            margin-bottom: 12px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
-        ul {
-            list-style-type: disc;
+        ul, ol {
             padding-left: 20px;
-        }
-
-        p {
-            text-align: left;
         }
 
         button {
@@ -74,29 +61,28 @@
             font-size: 16px;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 20px;
         }
 
         button:hover {
-            opacity: 90%;
+            opacity: 0.9;
         }
 
-        .button-section {
-            color: white;
-            font-weight: bold;
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h3 class="title">IoT based Food Feeding System for Pet</h3>
-        <h3 class="title">=====================================</h3>
-
-        <div class="button-section">Click here >>> <button
-                onclick="window.location.href='http://192.168.4.1/feed'">Feed</button> >>> to feed</div>
+        <h3>IoT based Food Feeding System for Pet</h3>
+        <hr>
+        <div>Click here to <button onclick="window.location.href='http://192.168.4.1/feed'">Feed</button> your pet remotely</div>
         <section>
             <h4>Project Overview</h4>
-            <h4>================</h4>
             <p>This project enables you to feed your pets remotely using IoT (Internet of Things) technology. By
                 leveraging a Raspberry Pi Pico W microcontroller and a Servo SG90 motor, you can automate the process of
                 dispensing pet food from a remote location.</p>
@@ -104,7 +90,6 @@
 
         <section>
             <h4>Tools Used</h4>
-            <h4>==========</h4>
             <ul>
                 <li>Raspberry Pi Pico W</li>
                 <li>Servo SG90</li>
@@ -114,7 +99,6 @@
 
         <section>
             <h4>Setup for Food Feeding</h4>
-            <h4>======================</h4>
             <ol>
                 <li>Connect the Servo SG90 to the Raspberry Pi Pico W.</li>
                 <li>Power up the Raspberry Pi Pico W using a USB cable.</li>
@@ -123,7 +107,6 @@
 
         <section>
             <h4>Instructions for Usage</h4>
-            <h4>======================</h4>
             <ol>
                 <li>Power on the Raspberry Pi Pico W.</li>
                 <li>Connect your device to the Wi-Fi network named: <b>NAME</b>.</li>
