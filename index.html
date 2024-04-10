@@ -1,63 +1,140 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IoT based Food Feeding for Pet Animals</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
+        body,
+        html {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('./bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
         .container {
-            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('./container-bg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
             margin: 50px auto;
             padding: 20px;
-            background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 60%;
+            height: 90vh;
+            opacity: 90%;
         }
-        h1 {
-            color: #007bff;
+
+        h3,
+        h4 {
+            color: white;
+            text-align: center;
         }
+
+        section {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        p {
+            text-align: left;
+        }
+
         button {
-            background-color: #007bff;
-            color: #fff;
+            background-color: black;
+            color: white;
             border: none;
             padding: 10px 20px;
             font-size: 16px;
             border-radius: 5px;
             cursor: pointer;
         }
+
         button:hover {
-            background-color: #0056b3;
+            opacity: 90%;
+        }
+
+        .button-section {
+            color: white;
+            font-weight: bold;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>IoT based Food Feeding for Pet Animals</h1>
-        <p>This project allows you to feed your lovely pets remotely using IoT technology.</p>
-        <h2>Tools Used:</h2>
-        <ul>
-            <li>Raspberry Pi Pico W</li>
-            <li>Servo SG90</li>
-        </ul>
-        <h2>Setup for Food Feeding:</h2>
-        <p>Just Connect a power suppply with a USB cable.</p>
-        <h2>Instructions:</h2>
-        <ol>
-            <li>Power up the Raspberry Pi Pico W.</li>
-            <li>Connect to the Wi-Fi network named: <strong>NAME</strong>.</li>
-            <li>Open the following IP address in your web browser: <strong>192.168.4.1</strong>.</li>
-            <li>Tap the "Feed" button to feed your pets.</li>
-        </ol>
-            <button onclick="window.location.href='http://192.168.4.1/feed'">Feed</button>
+        <h3 class="title">IoT based Food Feeding System for Pet</h3>
+        <h3 class="title">=====================================</h3>
 
-</div>
+        <div class="button-section">Click here >>> <button
+                onclick="window.location.href='http://192.168.4.1/feed'">Feed</button> >>> to feed</div>
+        <section>
+            <h4>Project Overview</h4>
+            <h4>================</h4>
+            <p>This project enables you to feed your pets remotely using IoT (Internet of Things) technology. By
+                leveraging a Raspberry Pi Pico W microcontroller and a Servo SG90 motor, you can automate the process of
+                dispensing pet food from a remote location.</p>
+        </section>
+
+        <section>
+            <h4>Tools Used</h4>
+            <h4>==========</h4>
+            <ul>
+                <li>Raspberry Pi Pico W</li>
+                <li>Servo SG90</li>
+                <li>USB Power Supply</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>Setup for Food Feeding</h4>
+            <h4>======================</h4>
+            <ol>
+                <li>Connect the Servo SG90 to the Raspberry Pi Pico W.</li>
+                <li>Power up the Raspberry Pi Pico W using a USB cable.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h4>Instructions for Usage</h4>
+            <h4>======================</h4>
+            <ol>
+                <li>Power on the Raspberry Pi Pico W.</li>
+                <li>Connect your device to the Wi-Fi network named: <b>NAME</b>.</li>
+                <li>Open a web browser and navigate to the IP address: <b>192.168.4.1</b>.</li>
+                <li>Tap the <b>Feed</b> button on the web interface to remotely dispense pet food.</li>
+            </ol>
+        </section>
+
+        <p>This project combines IoT technology with pet care, providing a convenient and innovative way to ensure your
+            pets are fed even when you're away from home.</p>
+    </div>
 </body>
+
 </html>
